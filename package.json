@@ -19,7 +19,10 @@
     "blueimp-bootstrap-image-gallery": "^3.3.6",
     "blueimp-gallery": "^2.17.0",
     "bootstrap": "^3.3.6",
+    "crossroads": "^0.12.2",
+    "hasher": "^1.2.0",
     "jquery": "^2.2.0",
-    "ractive": "^0.7.3"
+    "ractive": "^0.7.3",
+    "ractive-transitions-fade": "^0.3.1"
   }
 }
