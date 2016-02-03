@@ -21,6 +21,7 @@ let App = new Ractive({
   }
 });
 
+
 routes.forEach(function(route){
   crossroads.addRoute(route.path, route.handler.bind(this, App));
 });
@@ -33,8 +34,6 @@ function parseHash(newHash, oldHash){
 hasher.initialized.add(parseHash); //parse initial hash
 hasher.changed.add(parseHash); //parse hash changes
 hasher.init(); //start listening for history change
-
-//update URL fragment generating new history record
 
 
 crossroads.routed.add(console.log, console);

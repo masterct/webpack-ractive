@@ -1,26 +1,26 @@
 export
 default [{
-    path: 'test',
-    handler: function testRouteHandler(App) {
+    path: '',
+    handler: function homeRouteHandler(App) {
         App.set({
-            hasCarousel: false,
-            compName: 'formComp'
+            hasCarousel: true,
+            compName: 'carousel'
         })
     }
 }, {
-    path: 'test2',
-    handler: function testRouteHandler(App) {
+    path: 'gallery',
+    handler: function galleryRouteHandler(App, truc) {
         App.set({
             hasCarousel: false,
             compName: 'blueimpGallery'
         })
     }
 }, {
-    path: 'test3',
-    handler: function testRouteHandler(App) {
+    path: 'FAQ',
+    handler: function FAQRouteHandler(App) {
         App.set({
-            hasCarousel: true,
-            compName: 'carousel'
+            hasCarousel: false,
+            compName: 'formComp'
         })
     }
 }]
