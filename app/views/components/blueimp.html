@@ -33,14 +33,10 @@
     </div>
   </div>
   <div id="links">
-    <a href="img/Desert.jpg" title="Banana" data-gallery>
-      <img src="img/Desert.jpg" width="100" height="100" alt="Banana">
-    </a>
-    <a href="img/Desert.jpg" title="Apple" data-gallery>
-      <img src="img/Desert.jpg" width="100" height="100" alt="Apple">
-    </a>
-    <a href="img/Desert.jpg" title="Orange" data-gallery>
-      <img src="img/Desert.jpg" width="100" height="100" alt="Orange">
-    </a>
+  {{#images:i}}
+  <a href="{{src}}/{{i}}.jpg" title="{{name}} {{i}}" data-gallery>
+    <img src="{{src}}/{{i}}.jpg" width="{{width}}" height="{{height}}" alt="{{name}}">
+  </a>
+  {{/images}}
   </div>
 </div>
