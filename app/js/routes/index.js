@@ -12,8 +12,8 @@ default [{
     handler: function galleryRouteHandler(App, truc) {
         App.set({
             hasCarousel: false,
-            compName: 'blueimpGallery'
-        })
+            compName: 'gallery'
+        });
     }
 }, {
     path: 'FAQ',

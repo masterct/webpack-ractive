@@ -5,6 +5,7 @@ import navBar from './navBar';
 import imgGallery from './imgGallery';
 import blueimpGallery from './blueimpGallery';
 import ractiveRouter from './ractiveRouter';
+import gallery from './gallery';
 
 export default {
   carousel: carousel,
@@ -12,5 +13,6 @@ export default {
   formComp: form,
   navBar: navBar,
   blueimpGallery: blueimpGallery,
-  ractiveRouter: ractiveRouter
+  ractiveRouter: ractiveRouter,
+  gallery: gallery
 };

@@ -3,85 +3,19 @@ import Template from '../../../views/components/blueimp.html';
 
 var blueimpGallery = Ractive.extend({
     template: Template,
-    data: function() {
-      return {
-        images: [{
+    oninit: function() {
+      var src = this.get('src');
+      var total = this.get('total');
+      var imgs = [];
+      for (var i = 0; i < total; i++) {
+        imgs.push({
           name: 'Title',
-          src: 'img/safe',
+          src: src,
           width: '100',
           height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }, {
-          name: 'Title',
-          src: 'img/safe',
-          width: '100',
-          height: '100'
-        }]
+        });
       };
+      this.set('images', imgs);
     }
 });
 
