@@ -1,6 +1,11 @@
 <div>
   <blueimpGallery src='{{safeSrc}}' total={{totalSafeImages}} />
-  {{^showUnsafeImages}}
+  <br>
+  <br>
+  <a class="btn btn-lg btn-{{^showUnsafeImages}}danger{{/}}{{#showUnsafeImages}}primary{{/}}" role="button" on-click="toggleUnsafeImages">{{^showUnsafeImages}}Show{{/}}{{#showUnsafeImages}}Hide{{/}} unsafe images</a>
+  <br>
+  <br>
+  {{#showUnsafeImages}}
   <blueimpGallery src='{{unsafeSrc}}' total={{totalUnsafeImages}} />
   {{/}}
 

@@ -13,6 +13,11 @@ var gallery = Ractive.extend({
       totalUnsafeImages: 13,
       safeSrc: 'img/safe',
       unsafeSrc: 'img/unsafe'
+    },
+    oninit: function(){
+      this.on('toggleUnsafeImages', function(){
+        this.toggle('showUnsafeImages');
+      });
     }
 });
 
