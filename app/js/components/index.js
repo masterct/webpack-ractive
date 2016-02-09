@@ -7,6 +7,7 @@ import blueimpGallery from './blueimpGallery';
 import ractiveRouter from './ractiveRouter';
 import gallery from './gallery';
 import faq from './faq';
+import definitions from './definitions';
 
 export default {
     carousel: carousel,
@@ -16,5 +17,6 @@ export default {
     blueimpGallery: blueimpGallery,
     ractiveRouter: ractiveRouter,
     gallery: gallery,
-    faq: faq
+    faq: faq,
+    definitions: definitions
 };

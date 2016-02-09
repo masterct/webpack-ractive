@@ -1,7 +1,10 @@
 <div class="main-container">
-      <navBar/>
-      <div class="container {{^hasCarousel}}no-carousel{{/}}">
-       <ractiveRouter name="{{compName}}"/>
-      </div>
-      <myFooter/>
+    <navBar/>
+    <div class="container {{^hasCarousel}}no-carousel{{/}}">
+        <ractiveRouter name="{{compName}}"/>
+        {{#hasCarousel}}
+        <definitions/>
+        {{/}}
+    </div>
+    <myFooter/>
 </div>
