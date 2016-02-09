@@ -1,5 +1,6 @@
 import Ractive from 'ractive';
-import fade from 'ractive-transitions-fade'
+import fade from 'ractive-transitions-fade';
+import slide from 'ractive-transitions-slide';
 import crossroads from 'crossroads';
 import hasher from 'hasher';
 import template from '../views/app.html';
@@ -9,6 +10,7 @@ import decorators from './decorators';
 import routes from './routes'
 
 Ractive.transitions.fade = fade;
+Ractive.transitions.slide = slide;
 
 let App = new Ractive({
     el: '#app',

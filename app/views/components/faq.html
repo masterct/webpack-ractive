@@ -1,0 +1,15 @@
+<div class="container">
+<a href="#FAQ" title="Show all answers" on-click="showAll">Afficher tout</a>
+<a href="#FAQ" title="Show all answers" on-click="hideAll">Tout cacher</a>
+    <ul class="list-group">
+        {{#faqs}}
+        <li class="list-group-item">
+            <h4><strong><a href="#FAQ" title="{{question}}" on-click="toggleAnswer">{{question}}
+            <span class="glyphicon glyphicon-chevron-{{#if isHidden}}down{{else}}up{{/if}} pull-right" aria-hidden="true"></span></a></strong></h4>
+            {{^isHidden}}
+                <div outro="slide" intro="slide"><p>{{{answer}}}</p></div>
+            {{/}}
+        </li>
+        {{/faqs}}
+    </ul>
+</div>

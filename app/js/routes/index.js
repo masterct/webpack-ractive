@@ -19,7 +19,7 @@ export default [{
     handler: function FAQRouteHandler(App) {
         App.set({
             hasCarousel: false,
-            compName: 'formComp'
+            compName: 'faq'
         })
     }
 }]
