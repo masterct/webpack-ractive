@@ -1,6 +1,13 @@
-<div class="container">
-<a href="#FAQ" title="Show all answers" on-click="showAll">Afficher tout</a>
-<a href="#FAQ" title="Show all answers" on-click="hideAll">Tout cacher</a>
+<div>
+    <div class="text-center">
+        <button type="button" class="btn btn-default" aria-label="Right Align" on-click="showAll">
+          Tout afficher <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-default" aria-label="Right Align" on-click="hideAll">
+          Tout cacher <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        </button>
+    </div>
+    <br>
     <ul class="list-group">
         {{#faqs}}
         <li class="list-group-item">
@@ -12,4 +19,12 @@
         </li>
         {{/faqs}}
     </ul>
+    <div class="text-center">
+        <button type="button" class="btn btn-default" aria-label="Right Align" on-click="showAll">
+          Tout afficher <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-default" aria-label="Right Align" on-click="hideAll">
+          Tout cacher <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+        </button>
+    </div>
 </div>
