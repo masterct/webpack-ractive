@@ -2,7 +2,9 @@
   <blueimpGallery src='{{safeSrc}}' total={{totalSafeImages}} />
   <br>
   <br>
-  <a class="btn btn-lg btn-{{^showUnsafeImages}}danger{{/}}{{#showUnsafeImages}}primary{{/}}" role="button" on-click="toggleUnsafeImages">{{^showUnsafeImages}}Show{{/}}{{#showUnsafeImages}}Hide{{/}} unsafe images</a>
+  <div class="text-center">
+    <a class="btn btn-lg btn-{{^showUnsafeImages}}danger{{/}}{{#showUnsafeImages}}primary{{/}}" role="button" on-click="toggleUnsafeImages">{{^showUnsafeImages}}Show{{/}}{{#showUnsafeImages}}Hide{{/}} unsafe images</a>
+  </div>
   <br>
   <br>
   {{#showUnsafeImages}}
