@@ -1,11 +1,9 @@
 <div>
     <div class="text-center">
-        <button type="button" class="btn btn-default" aria-label="Right Align" on-click="showAll">
-          Tout afficher <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-        </button>
-        <button type="button" class="btn btn-default" aria-label="Right Align" on-click="hideAll">
-          Tout cacher <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
-        </button>
+        <h2>On peut se demander …</h2>
+        <br>
+        <br>
+        {{>showHideButtons}}
     </div>
     <br>
     <ul class="list-group">
@@ -20,11 +18,11 @@
         {{/faqs}}
     </ul>
     <div class="text-center">
-        <button type="button" class="btn btn-default" aria-label="Right Align" on-click="showAll">
-          Tout afficher <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-        </button>
-        <button type="button" class="btn btn-default" aria-label="Right Align" on-click="hideAll">
-          Tout cacher <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
-        </button>
+        {{>showHideButtons}}
     </div>
 </div>
+
+{{#partial showHideButtons}}
+<button type="button" class="btn btn-default" aria-label="Right Align" on-click="showAll">Tout afficher <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button>
+<button type="button" class="btn btn-default" aria-label="Right Align" on-click="hideAll">Tout cacher <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
+{{/partial}}
