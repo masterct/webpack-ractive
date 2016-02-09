@@ -8,11 +8,11 @@ import ractiveRouter from './ractiveRouter';
 import gallery from './gallery';
 
 export default {
-  carousel: carousel,
-  myFooter: footer,
-  formComp: form,
-  navBar: navBar,
-  blueimpGallery: blueimpGallery,
-  ractiveRouter: ractiveRouter,
-  gallery: gallery
+    carousel: carousel,
+    myFooter: footer,
+    formComp: form,
+    navBar: navBar,
+    blueimpGallery: blueimpGallery,
+    ractiveRouter: ractiveRouter,
+    gallery: gallery
 };

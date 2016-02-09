@@ -11,24 +11,24 @@ import routes from './routes'
 Ractive.transitions.fade = fade;
 
 let App = new Ractive({
-  el: '#app',
-  template: template,
-  components: components,
-  decorators: decorators,
-  data: {
-    hasCarousel: true,
-    compName: 'carousel'
-  }
+    el: '#app',
+    template: template,
+    components: components,
+    decorators: decorators,
+    data: {
+        hasCarousel: true,
+        compName: 'carousel'
+    }
 });
 
 
-routes.forEach(function(route){
-  crossroads.addRoute(route.path, route.handler.bind(this, App));
+routes.forEach(function(route) {
+    crossroads.addRoute(route.path, route.handler.bind(this, App));
 });
 
 //setup hasher
-function parseHash(newHash, oldHash){
-  crossroads.parse(newHash);
+function parseHash(newHash, oldHash) {
+    crossroads.parse(newHash);
 }
 
 hasher.initialized.add(parseHash); //parse initial hash

@@ -1,5 +1,4 @@
-export
-default [{
+export default [{
     path: '',
     handler: function homeRouteHandler(App) {
         App.set({
