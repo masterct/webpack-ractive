@@ -10,7 +10,7 @@ var gallery = Ractive.extend({
     data: {
         showUnsafeImages: false,
         totalSafeImages: 15,
-        totalUnsafeImages: 13,
+        totalUnsafeImages: 12,
         safeSrc: 'img/safe',
         unsafeSrc: 'img/unsafe'
     },
