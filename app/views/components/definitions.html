@@ -4,9 +4,21 @@
         <br>
         <br>
     </div>
-    {{#definitions}}
-        <p><strong>{{name}} : </strong>{{{content}}}</p>
+    <br>
+
+    <div class="container marketing">
+    {{#definitions:i}}
+    <div class="row featurette">
+        <div class="col-md-7 {{#i%2 === 0}}col-md-push-5{{/}}">
+          <h2 class="featurette-heading">{{name}}</h2>
+          <p class="lead">{{{content}}}</p>
+        </div>
+        <div class="col-md-5 {{#i%2 === 0}}col-md-pull-7{{/}}">
+          <img class="featurette-image img-responsive center-block" src="img/home/{{i}}.{{ext}}" alt="image-{{i}}">
+        </div>
+    </div>
+    <hr class="featurette-divider">
     {{/}}
-    <br>
-    <br>
+    </div>
+
 </div>
