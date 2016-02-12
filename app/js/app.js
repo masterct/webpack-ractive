@@ -7,7 +7,7 @@ import template from '../views/app.html';
 
 import components from './components';
 import decorators from './decorators';
-import routes from './routes'
+import routes from './routes';
 
 Ractive.transitions.fade = fade;
 Ractive.transitions.slide = slide;
