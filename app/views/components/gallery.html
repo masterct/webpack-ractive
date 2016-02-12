@@ -1,0 +1,21 @@
+<div>
+  <blueimpGallery src='{{safeSrc}}' total={{totalSafeImages}} />
+  <br>
+  <br>
+  <div class="text-center">
+    <a class="btn btn-lg btn-{{^showUnsafeImages}}danger{{/}}{{#showUnsafeImages}}primary{{/}}" role="button" on-click="toggleUnsafeImages">{{^showUnsafeImages}}Show{{/}}{{#showUnsafeImages}}Hide{{/}} unsafe images</a>
+  </div>
+  <br>
+  <br>
+  {{#showUnsafeImages}}
+  <div outro="fade">
+    <blueimpGallery src='{{unsafeSrc}}' total={{totalUnsafeImages}} />
+  </div>
+  {{/}}
+  <br>
+  <br>
+  <div>
+    <strong>Sources des images</strong> : Certaines images ont été prises par des agences de presses, d’autres par des organisations gouvernementales ou non gouvernementales, ou encore par des amateurs. UNIEF AMC/AFP AFP Centre de madia d’ALEP Prière de nous contacter pour toute revendication pour des images ou toute autre remarque. Le but de ce travail est purement humanitaire.<br>
+    Ce travail a été effectué d'après l'initiative du collectif Coexister au Saguenay Lac St Jean<br>
+  </div>
+</div>

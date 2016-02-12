@@ -1,5 +1,4 @@
-export
-default [{
+export default [{
     path: '',
     handler: function homeRouteHandler(App) {
         App.set({
@@ -12,15 +11,15 @@ default [{
     handler: function galleryRouteHandler(App, truc) {
         App.set({
             hasCarousel: false,
-            compName: 'blueimpGallery'
-        })
+            compName: 'gallery'
+        });
     }
 }, {
     path: 'FAQ',
     handler: function FAQRouteHandler(App) {
         App.set({
             hasCarousel: false,
-            compName: 'formComp'
+            compName: 'faq'
         })
     }
 }]

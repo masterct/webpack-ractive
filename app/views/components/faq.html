@@ -1,0 +1,28 @@
+<div>
+    <div class="text-center">
+        <h2>On peut se demander …</h2>
+        <br>
+        <br>
+        {{>showHideButtons}}
+    </div>
+    <br>
+    <ul class="list-group">
+        {{#faqs}}
+        <li class="list-group-item">
+            <h4><strong><a href="#FAQ" title="{{question}}" on-click="toggleAnswer">{{question}}
+            <span class="glyphicon glyphicon-chevron-{{#if isHidden}}down{{else}}up{{/if}} pull-right" aria-hidden="true"></span></a></strong></h4>
+            {{^isHidden}}
+                <div outro="slide" intro="slide"><p>{{{answer}}}</p></div>
+            {{/}}
+        </li>
+        {{/faqs}}
+    </ul>
+    <div class="text-center">
+        {{>showHideButtons}}
+    </div>
+</div>
+
+{{#partial showHideButtons}}
+<button type="button" class="btn btn-default" aria-label="Right Align" on-click="showAll">Tout afficher <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button>
+<button type="button" class="btn btn-default" aria-label="Right Align" on-click="hideAll">Tout cacher <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
+{{/partial}}

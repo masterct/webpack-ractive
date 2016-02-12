@@ -1,34 +1,36 @@
 import Ractive from 'ractive';
-import fade from 'ractive-transitions-fade'
+import fade from 'ractive-transitions-fade';
+import slide from 'ractive-transitions-slide';
 import crossroads from 'crossroads';
 import hasher from 'hasher';
 import template from '../views/app.html';
 
 import components from './components';
 import decorators from './decorators';
-import routes from './routes'
+import routes from './routes';
 
 Ractive.transitions.fade = fade;
+Ractive.transitions.slide = slide;
 
 let App = new Ractive({
-  el: '#app',
-  template: template,
-  components: components,
-  decorators: decorators,
-  data: {
-    hasCarousel: true,
-    compName: 'carousel'
-  }
+    el: '#app',
+    template: template,
+    components: components,
+    decorators: decorators,
+    data: {
+        hasCarousel: true,
+        compName: 'carousel'
+    }
 });
 
 
-routes.forEach(function(route){
-  crossroads.addRoute(route.path, route.handler.bind(this, App));
+routes.forEach(function(route) {
+    crossroads.addRoute(route.path, route.handler.bind(this, App));
 });
 
 //setup hasher
-function parseHash(newHash, oldHash){
-  crossroads.parse(newHash);
+function parseHash(newHash, oldHash) {
+    crossroads.parse(newHash);
 }
 
 hasher.initialized.add(parseHash); //parse initial hash
